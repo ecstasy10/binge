@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../sass/style.sass"
+	],
+	"sourcesContent": [
+		"$bg: #e9e9e9;\n$bg-hover: #ddd;\n\nbody {\n    margin: 0; }\n\n.topnav {\n    overflow: hidden;\n    background-color: $bg;\n    font-family: 'Alata', sans-serif;\n    h1 {\n        float: left;\n        display: block;\n        color: black;\n        text-align: center;\n        padding: 14px 16px;\n        text-decoration: none;\n        font-size: 17px;\n        margin: 0; }\n    input {\n        &[type=text] {\n            float: right;\n            padding: 6px;\n            border: none;\n            margin-top: 8px;\n            margin-right: 16px;\n            font-size: 17px; } }\n    button {\n        float: right;\n        padding: 6px 10px;\n        margin-top: 8px;\n        margin-right: 16px;\n        background: #ddd;\n        font-size: 17px;\n        border: none;\n        cursor: pointer; } }\n\n\n@media screen and (max-width: 600px) {\n    .topnav a, .topnav input[type=text] {\n        float: none;\n        display: block;\n        text-align: left;\n        width: 100%;\n        margin: 0; }\n    .topnav input[type=text] {\n        border: 1px solid #ccc; } }\n\n\n\n\n\n\n\n\n"
+	],
+	"names": [],
+	"mappings": ";;AAGA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC,GAAG;;;AAEhB,AAAA,OAAO,CAAC;EACJ,QAAQ,EAAE,MAAM;EAChB,gBAAgB,EARf,OAAO;EASR,WAAW,EAAE,mBAAmB,GA0BR;;EA7B5B,AAII,OAJG,CAIH,EAAE,CAAC;IACC,KAAK,EAAE,IAAI;IACX,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,KAAK;IACZ,UAAU,EAAE,MAAM;IAClB,OAAO,EAAE,SAAS;IAClB,eAAe,EAAE,IAAI;IACrB,SAAS,EAAE,IAAI;IACf,MAAM,EAAE,CAAC,GAAG;;EAZpB,AAcQ,OAdD,CAaH,KAAK,CACA,AAAA,IAAC,CAAD,IAAC,AAAA,EAAW;IACT,KAAK,EAAE,KAAK;IACZ,OAAO,EAAE,GAAG;IACZ,MAAM,EAAE,IAAI;IACZ,UAAU,EAAE,GAAG;IACf,YAAY,EAAE,IAAI;IAClB,SAAS,EAAE,IAAI,GAAG;;EApB9B,AAqBI,OArBG,CAqBH,MAAM,CAAC;IACH,KAAK,EAAE,KAAK;IACZ,OAAO,EAAE,QAAQ;IACjB,UAAU,EAAE,GAAG;IACf,YAAY,EAAE,IAAI;IAClB,UAAU,EAAE,IAAI;IAChB,SAAS,EAAE,IAAI;IACf,MAAM,EAAE,IAAI;IACZ,MAAM,EAAE,OAAO,GAAG;;AAG1B,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;;EAC/B,AAAA,OAAO,CAAC,CAAC,EAAE,OAAO,CAAC,KAAK,CAAA,AAAA,IAAC,CAAD,IAAC,AAAA,EAAW;IAChC,KAAK,EAAE,IAAI;IACX,OAAO,EAAE,KAAK;IACd,UAAU,EAAE,IAAI;IAChB,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,CAAC,GAAG;;EAChB,AAAA,OAAO,CAAC,KAAK,CAAA,AAAA,IAAC,CAAD,IAAC,AAAA,EAAW;IACrB,MAAM,EAAE,cAAc,GAAG"
+}
