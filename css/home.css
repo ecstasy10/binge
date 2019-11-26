@@ -1,10 +1,16 @@
 body {
   margin: 0;
-  background: #000428;
-  background: -webkit-linear-gradient(to right, #004e92, #000428);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #004e92, #000428);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: linear-gradient(270deg, #0081ff, #012a52);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 .wrapper {
   display: grid;
@@ -30,23 +36,13 @@ body {
     float: right;
     background: inherit;
     color: white; }
-  .topnav .loginBut {
-    margin: 2.6em 1em 0em 0em;
-    border: inherit; }
-    .topnav .loginBut:hover {
+  .topnav .text {
+    font-family: 'Montserrat', sans-serif;
+    margin: 2.1em 1em 0em 0em;
+    border: inherit;
+    font-size: 1em; }
+    .topnav .text a:hover {
       transition: .3s;
-      color: grey; }
-  .topnav .signupBut {
-    margin: 2em 3em 0em 0em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-    padding-bottom: .5em;
-    padding-top: .5em;
-    border-radius: 1.5em;
-    border: .15em solid white; }
-    .topnav .signupBut:hover {
-      transition: .3s;
-      border-color: grey;
       color: grey; }
 
 #login-form {

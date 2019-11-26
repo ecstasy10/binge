@@ -1,0 +1,116 @@
+body 
+    margin: 0
+    background: #000428  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.wrapper
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(4, 1fr)
+
+.topnav 
+    overflow: hidden
+    font-family: 'Alata', sans-serif
+    grid-column: 1 / 13
+    grid-row: 1
+    a
+        text-decoration: none
+        color: white
+    h1 
+        float: left
+        text-align: center
+        padding: 1.3em 2em
+        font-size: 1.2em
+        margin: 0
+        letter-spacing: 2px
+    button
+        float: right
+        background: inherit
+        color: white
+    .loginBut
+        margin: 2.6em 1em 0em 0em
+        border: inherit
+        &:hover
+            transition: .3s
+            color: grey
+    .signupBut
+        margin: 2em 3em 0em 0em
+        padding-left: 1.5em
+        padding-right: 1.5em
+        padding-bottom: .5em
+        padding-top: .5em
+        border-radius: 1.5em
+        border: .15em solid white
+        &:hover
+            transition: .3s
+            border-color: grey
+            color: grey
+
+#login-form
+    width: 120px
+    background: grey
+    text-align: center
+    display: none
+    margin: auto
+    input
+        background: black
+        color: white
+        display: block
+        margin-left: 10px
+        width: 100px
+
+.title
+    color: white
+    font-family: 'Montserrat', sans-serif
+    text-align: center
+    font-size: 1.2em
+    font-weight: 800
+    grid-column: 3 / 11
+    grid-row: 2
+    p
+        font-size: .8em
+        font-weight: normal
+    .title_color
+        color: #2cc8ce
+    button
+        width: 15em
+        padding-top: .4em
+        padding-bottom: .4em
+        margin-top: 1em
+        border-radius: 1.5em
+        border: 0 solid white
+        font-family: 'Montserrat', sans-serif
+        font-weight: 600
+        &:hover
+            transition: .2s
+            background-color: #2cc8ce
+            color: white
+
+footer
+    font-family: 'Montserrat', sans-serif
+    left: 0
+    bottom: 0
+    width: 100%
+    background-color: #252525
+    color: white
+    text-align: center
+    grid-column: 1 / 13
+    grid-row: 5
+    a
+        text-decoration: none
+        color: white
+    .fa
+        margin-bottom: 1em
+        font-size: 1.5em
+
+
+@media screen and (max-width: 600px)
+    .topnav a, .topnav input[type=text]
+        float: none
+        display: block
+        text-align: left
+        width: 100%
+        margin: 0
+    .topnav input[type=text]
+        border: 1px solid #ccc
