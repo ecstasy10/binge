@@ -83,7 +83,8 @@ body {
     border-radius: 1.5em;
     border: 0 solid white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .title button:hover {
       transition: .2s;
       background-color: #2cc8ce;

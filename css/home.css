@@ -15,75 +15,94 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 1fr); }
+  grid-template-rows: repeat(8, 1fr);
+  grid-gap: .3em; }
+
+@keyframes resize {
+  0% {
+    grid-column-start: 3;
+    grid-row-start: 2; }
+  50% {
+    grid-column-start: 5;
+    grid-row-start: 4; }
+  100% {
+    grid-column-end: 11;
+    grid-row-end: 6; } }
 
 .topnav {
   overflow: hidden;
   font-family: 'Alata', sans-serif;
   grid-column: 1 / 13;
-  grid-row: 1; }
-  .topnav a {
-    text-decoration: none;
-    color: white; }
+  grid-row: 1;
+  text-decoration: none;
+  color: white; }
   .topnav h1 {
     float: left;
     text-align: center;
     padding: 1.3em 2em;
     font-size: 1.2em;
     margin: 0;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    transition: .4s; }
+    .topnav h1:hover {
+      letter-spacing: 3px; }
   .topnav button {
     float: right;
     background: inherit;
-    color: white; }
+    color: white;
+    transition: .4s; }
+    .topnav button:hover {
+      letter-spacing: 3px; }
   .topnav .text {
     font-family: 'Montserrat', sans-serif;
     margin: 2.1em 1em 0em 0em;
     border: inherit;
     font-size: 1em; }
-    .topnav .text a:hover {
-      transition: .3s;
-      color: grey; }
 
-#login-form {
-  width: 120px;
-  background: grey;
-  text-align: center;
-  display: none;
-  margin: auto; }
-  #login-form input {
-    background: black;
-    color: white;
-    display: block;
-    margin-left: 10px;
-    width: 100px; }
-
-.title {
-  color: white;
+.friends, .sessions-list, .tvtime-app, .profile {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: white;
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: 800;
-  grid-column: 3 / 11;
-  grid-row: 2; }
-  .title p {
-    font-size: .8em;
-    font-weight: normal; }
-  .title .title_color {
-    color: #2cc8ce; }
-  .title button {
-    width: 15em;
-    padding-top: .4em;
-    padding-bottom: .4em;
-    margin-top: 1em;
+  border-radius: 0.3em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: .3em 2em;
+  float: right;
+  grid-transition: 1s; }
+  .friends h1, .sessions-list h1, .tvtime-app h1, .profile h1 {
+    font-size: 1em;
+    margin-top: 0;
+    text-align: center;
+    color: #012a52; }
+  .friends input, .sessions-list input, .tvtime-app input, .profile input {
+    width: 70%;
+    border: inherit;
+    color: #474747;
+    padding: .5em; }
+  .friends button, .sessions-list button, .tvtime-app button, .profile button {
     border-radius: 1.5em;
     border: 0 solid white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600; }
-    .title button:hover {
+    padding: .5em; }
+    .friends button:hover, .sessions-list button:hover, .tvtime-app button:hover, .profile button:hover {
       transition: .2s;
       background-color: #2cc8ce;
       color: white; }
+
+.sessions-list {
+  grid-column: 5 / 11;
+  grid-row: 2 / 6; }
+
+.tvtime-app {
+  grid-column: 3 / 5;
+  grid-row: 4 / 6; }
+
+.profile {
+  grid-column: 3 / 11;
+  grid-row: 2 / 6;
+  z-index: 5;
+  display: none; }
 
 footer {
   font-family: 'Montserrat', sans-serif;
@@ -94,20 +113,10 @@ footer {
   color: white;
   text-align: center;
   grid-column: 1 / 13;
-  grid-row: 5; }
+  grid-row: 8; }
   footer a {
     text-decoration: none;
     color: white; }
   footer .fa {
     margin-bottom: 1em;
     font-size: 1.5em; }
-
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0; }
-  .topnav input[type=text] {
-    border: 1px solid #ccc; } }

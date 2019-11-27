@@ -12,27 +12,36 @@
         rel="stylesheet">
     <title>Binge</title>
 </head>
-
 <body>
+
     <div class="wrapper">
         <div class="topnav">
-            <h1><a href="index.html">BINGE</a></h1>
-            <button class="text"><a href="profile.html">Profile</a></button>
-            <button class="text"><a href="sessions.html">Sessions</a></button>
-            <button class="text"><a href="new_sessions.html">New Session</a></button>
-            <button class="text"><a href="friends.html">Friends</a></button>
+            <h1 onclick="location.href='index.html';">BINGE</h1>
+            <button class="text" id="profile-nav">Profile</button>
+            <button class="text" id="sessions-nav">Sessions</button>
+            <button class="text" id="new-session-nav">New Session</button>
+            <button class="text" id="friends-nav">Friends</button>
         </div>
-
-        <div class="Friends">
-
+        <div class="friends" id="friends-box">
+            <h1>Friends</h1>
+            <button class="fa fa-search"></button>
+            <input type="email" placeholder="Email">
+            <hr>
         </div>
-        
-        <div class="sessions-list">
-
+        <div class="sessions-list" id="sessions-list-box">
+            <h1>Sessions List</h1>
+            <button class="fa fa-search"></button>
+            <input type="email" placeholder="Session Number...">
+            <hr>
         </div>
-
         <div class="tvtime-app">
-
+            <h1>TvTime</h1>
+            <button class="fa fa-search"></button>
+            <input type="email" placeholder="Show name...">
+            <hr>
+        </div>
+        <div class="profile" id="profile-box">
+            <h1>Profile</h1>
         </div>
 
         <footer>
@@ -53,7 +62,6 @@
     </div>
     </div>
     <script src="js/background.js"></script>
-    <script src="js/login.js"></script>
 </body>
 
 </html>
