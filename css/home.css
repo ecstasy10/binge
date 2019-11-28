@@ -15,6 +15,10 @@ button:focus {
   100% {
     background-position: 0% 50%; } }
 
+/* ##########################################
+                NAV MENU
+   ########################################## */
+/* ########################################## */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -71,7 +75,7 @@ button:focus {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: .3em 2em;
   float: right;
-  grid-transition: 1s; }
+  transition: 2s; }
   .friends h1, .sessions-list h1, .tvtime-app h1, .profile h1 {
     font-size: 1em;
     margin-top: 0;
@@ -132,7 +136,7 @@ footer {
     grid-column: 3 / 11;
     grid-row: 2 / 4; }
   .sessions-list {
-    grid-column: 3/ 11;
+    grid-column: 3 / 11;
     grid-row: 4 / 7; }
   .tvtime-app {
     grid-column: 3 / 11;
